@@ -145,6 +145,7 @@ label interrogate_acorn:
             acorn "I'm innocent!"
     mc "You've got a mouth on you, and you constantly try to get out of answering questions."
     acorn "Look, I've got better things to do."
+    mc "Fine, fine.  That'll be all for now..."
     jump pick_interrogation
 
 label accuse_saboteur:
