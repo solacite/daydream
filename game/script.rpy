@@ -1,11 +1,10 @@
-﻿define fo = Character("Fox", color="#ff7f50", image="fox") # tiger
-define ar = Character("Ariel", color="#ffa500", image="ariel") # bunny
-define ge = Character("Gerald", color="#98fb98", image="gerald") # frog
-define co = Character("Computer", color="#87cefa", image="computer") # cat
-define ca = Character("Carpet", color="#d2b48c", image="carpet") # dog
-define ni = Character("Nicky", color="#ff69b4", image="nicky") # axolotl
-define ac = Character("Acorn", color="#8b4513", image="acorn") # squirrel
-define hi = Character("Heidi", color="#9370db", image="heidi") # orphie dino
+﻿define fox = Character("Fox", color="#FFA500", image="fox") # tiger
+define ariel = Character("Ariel", color="#FFC0CB", image="ariel") # bunny
+define gerald = Character("Gerald", color="#90EE90", image="gerald") # frog
+define computer = Character("Computer", color="#F5F5DC", image="computer") # cat
+define carpet = Character("Carpet", color="#654321", image="carpet") # dog
+define nicky = Character("Nicky", color="#FA8072", image="nicky") # axolotl
+define acorn = Character("Acorn", color="#A0522D", image="acorn") # squirrel
 define mc = Character("You", color="#ffffff") # you lol
 
 label start:
@@ -16,12 +15,24 @@ label start:
 
     show fox at left
 
-    co "I'm literally going to combust."
+    mc "Wtf???"
+    fox ""
+    fox "Once you add a story, pictures, and music, you can release it to the world!"
+    label ask_loop:
+        menu:
+            "Ask Fox about the game":
+                mc "What's this game about?"
+                fox "It's a game about a fox who wants to be a hero."
+            "Nevermind":
+                mc "What's this game about?"
+                fox "It's a game about a fox who wants to be a hero."
+                jump ask_loop
+    fox "You won!"
+    jump game_over
 
-    mc "Huh?"
 
-    co "Something's up with the ship!"
-
-    mc "Are you getting a merge conflict or something?"
-
+label game_over:
+    scene bg dorms
+    show fox at right
+    fox "You win!"
     return
