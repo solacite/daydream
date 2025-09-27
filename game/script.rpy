@@ -226,6 +226,7 @@ label accuse_carpet:
     $ hide_my_chars()
     show carpet
     carpet "You're a dead axolotl."
+    carpet "It was me, though..."
     jump game_over
 
 label accuse_acorn:
