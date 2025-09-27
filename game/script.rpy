@@ -80,7 +80,31 @@ label interrogate_computer:
 
 label interrogate_carpet:
     scene bg interrogation_room
-    carpet "..."
+    show carpet at center
+    mc "So... where were you when the alarms went off?"
+    carpet "Dreamland, man. Out cold. Didn’t hear a thing until the sirens quit."
+    menu:
+        "Weren't you walking around...?":
+            carpet "Nah, they must’ve seen someone else. I was sleepy..."
+        "Convenient timing.":
+            carpet "Yeah, ‘convenient’ is my middle name."
+    mc "Anyone see you around then?"    
+    carpet "Nope. Guess that makes me innocent, right?"
+    menu:
+        "Or very unaccountable.":
+            carpet "What? No!"
+        "Funny, Computer says you wandered into the server room.":
+            carpet "Oh right!  I did get lost.  But only for a sec.  Bathroom mix-up."
+    mc "Why so tired all the time?"
+    carpet "Because carrying this crew on my back is exhausting."
+    menu:
+        "That's a joke":
+            carpet "Yeah, I know.  But it’s true."
+        "Nobody remembers you carrying anything":
+            carpet "Not even my blanket!"
+    mc "So you were asleep... but also in the server room... but also nobody saw you.  That adds up to nothing, Carpet!"
+    carpet "You're twisting my words, man.  Totally twisting them!"
+    mc "That'll be all for now..."
     jump pick_interrogation
 
 label interrogate_nicky:
