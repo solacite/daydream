@@ -59,30 +59,37 @@ label pick_interrogation:
 label scene_2:
 
 label interrogate_fox:
+    scene bg interrogation_room
     fox "Let's talk. But make it fast."
     jump pick_interrogation
 
 label interrogate_ariel:
+    scene bg interrogation_room
     ariel "You think I did it? Prove it."
     jump pick_interrogation
 
 label interrogate_gerald:
+    scene bg interrogation_room
     gerald "Ribbit— I mean, no comment."
     jump pick_interrogation
 
 label interrogate_computer:
+    scene bg interrogation_room
     computer "Interrogating the system? Bold."
     jump pick_interrogation
 
 label interrogate_carpet:
+    scene bg interrogation_room
     carpet "..."
     jump pick_interrogation
 
 label interrogate_nicky:
+    scene bg interrogation_room
     nicky "Whoa, whoa— chill. What's this about?"
     jump pick_interrogation
 
 label interrogate_acorn:
+    scene bg interrogation_room
     acorn "You can't pin this on me."
     jump pick_interrogation
 
