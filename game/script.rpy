@@ -74,7 +74,32 @@ label interrogate_ariel:
 label interrogate_gerald:
     scene bg interrogation_room
     show gerald at center
-    gerald "Ribbit— I mean, no comment."
+    mc "Are those M&M's you're eating?  Is this really the appropriate time?"
+    gerald "You're here!  Took you long enough.  I was about to solve this whole case myself."
+    mc "...while eating candy?"
+    gerald "They're M&M's.  I love M&M's."
+    mc "Where were you when the alarms went off?"
+    gerald "Uhhh... the dorms.  Or the galley.  Definitely one of those.  Wait... the cockpit..."
+    menu:
+        "That's three different places":
+            gerald "Yeah, I really don't remember TBH"
+        "You don't remember?":
+            gerald "Look, alarms make me nervous...  I hide.  I forget."
+    mc "Who seemed off to you?"
+    gerald "Acorn.  Always twitching.  That squirrel's up to something.  He's also always a jerk.  Or maybe computer?"
+    menu:
+        "That's not evidence":
+            "It's not me, that's all I got."
+        "Anyone else?":
+            "Carpet?  But he's always sleepy, so who can tell."
+    mc "Why didn't you help during the alarm?"
+    gerald "I was... thinking.  Deeply thinking and planning and stuff..."
+    menu:
+        "Thinking about what?":
+            "Umm... do M&M's taste better in space or is it just me?"
+        "That's not helping":
+            "Just leave me alone man"
+    mc "That'll be all for now..."
     jump pick_interrogation
 
 label interrogate_computer:
@@ -147,6 +172,7 @@ label interrogate_acorn:
             acorn "I'm innocent!"
     mc "You've got a mouth on you, and you constantly try to get out of answering questions."
     acorn "Look, I've got better things to do."
+    mc "Fine, fine.  That'll be all for now..."
     jump pick_interrogation
 
 label accuse_saboteur:
