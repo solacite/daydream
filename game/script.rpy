@@ -114,7 +114,32 @@ label interrogate_nicky:
 
 label interrogate_acorn:
     scene bg interrogation_room
-    acorn "You can't pin this on me."
+    acorn "You've got THREE minutes.  I've got to get back to the cockpit.  We're running out of oxygen, and someone's got to save us.  Also, the ship doesn't steer itself!"
+    mc "Well, funnily enough, it kind of does... but anyway, why're you acting so responsible all of a sudden?"
+    acorn "Shush, someone's trying to kill us.  Focus!"
+    mc "Where were you when the alarm hit?"
+    acorn "At the helm.  Where else?  Someone's gotta look after it..."
+    menu:
+        "Anyone see you?":
+            acorn "No witnesses.  Don't need 'em.  I know my job."
+        "That's convenient.":
+            acorn "Yeah, I know, can I get back to my work?"
+    mc "Did you notice anything off?"
+    acorn "Gerald came through.  Reeked of burnt wires.  Asked dumb questions.  Then left."
+    menu:
+        "You didn't stop him?":
+            acorn "Not my department.  I steer, I don't babysit."
+        "Why mention the smell?":
+            acorn "Because you should pay attention..."
+    mc "Why are you so hostile?"
+    acorn "Because I don't like being accused."
+    menu:
+        "Sounds defensive.":
+            acorn "Sounds accurate."
+        "How do I trust you?":
+            acorn "I'm innocent!"
+    mc "You've got a mouth on you, and you constantly try to get out of answering questions."
+    acorn "Look, I've got better things to do."
     jump pick_interrogation
 
 label accuse_saboteur:
