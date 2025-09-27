@@ -1,9 +1,9 @@
-﻿define fox = Character("Fox", color="#FFA500", image="fox") # tiger
-define ariel = Character("Ariel", color="#FFC0CB", image="ariel") # bunny
-define gerald = Character("Gerald", color="#90EE90", image="gerald") # frog
-define computer = Character("Computer", color="#F5F5DC", image="computer") # cat
-define carpet = Character("Carpet", color="#654321", image="carpet") # axolotl
-define acorn = Character("Acorn", color="#A0522D", image="acorn") # squirrel
+﻿define fox = Character("Fox", color="#fe8000", image="fox") # tiger
+define ariel = Character("Ariel", color="#d199d8", image="ariel") # bunny
+define gerald = Character("Gerald", color="#97f180", image="gerald") # frog
+define computer = Character("Computer", color="#7eb5e7", image="computer") # cat
+define carpet = Character("Carpet", color="#e45c49", image="carpet") # axolotl
+define acorn = Character("Acorn", color="#b57d4d", image="acorn") # squirrel
 define mc = Character("You", color="#ffffff") # you lol
 
 transform resized_lowered:

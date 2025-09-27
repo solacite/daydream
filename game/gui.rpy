@@ -1,4 +1,8 @@
-﻿################################################################################
+﻿define gui.text_font = "gui/fonts/SourGummy-Regular.ttf"
+define gui.name_text_font = "gui/fonts/SourGummy-Regular.ttf"
+define gui.interface_text_font = "gui/fonts/SourGummy-Regular.ttf"
+
+################################################################################
 ## Initialization
 ################################################################################
 
