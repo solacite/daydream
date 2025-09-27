@@ -10,12 +10,18 @@ define mc = Character("You", color="#ffffff") # you lol
 
 label start:
 
+    # initial dorm scene - talk w/ IT head, then alarms sound
+
     scene bg dorms
 
     show fox at left
 
-    fox "You've created a new Ren'Py game."
+    co "I'm literally going to combust."
 
-    fox "Once you add a story, pictures, and music, you can release it to the world!"
+    mc "Huh?"
+
+    co "Something's up with the ship!"
+
+    mc "Are you getting a merge conflict or something?"
 
     return
