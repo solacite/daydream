@@ -2,16 +2,27 @@
 define ariel = Character("Ariel", color="#FFC0CB", image="ariel") # bunny
 define gerald = Character("Gerald", color="#90EE90", image="gerald") # frog
 define computer = Character("Computer", color="#F5F5DC", image="computer") # cat
-define carpet = Character("Carpet", color="#654321", image="carpet") # dog
-define nicky = Character("Nicky", color="#FA8072", image="nicky") # axolotl
+define carpet = Character("Carpet", color="#654321", image="carpet") # axolotl
 define acorn = Character("Acorn", color="#A0522D", image="acorn") # squirrel
 define mc = Character("You", color="#ffffff") # you lol
+
+
+transform resized_lowered:
+    zoom 0.9
+    yalign 1.0
+    yoffset 300
+
+image computer = At("computer.png", resized_lowered)
+image fox = At("fox.png", resized_lowered)
+image ariel = At("ariel.png", resized_lowered)
+image gerald = At("gerald.png", resized_lowered)
+image carpet = At("carpet.png", resized_lowered)
+image acorn = At("acorn.png", resized_lowered)
 
 label start:
 
     # initial dorm scene - talk w/ IT head, then alarms sound
 
-    scene bg dorms
     show computer at center
 
     mc "Computer... something feels off..."
@@ -48,8 +59,6 @@ label pick_interrogation:
             jump interrogate_computer
         "Interrogate Carpet":
             jump interrogate_carpet
-        "Interrogate Nicky":
-            jump interrogate_nicky
         "Interrogate Acorn":
             jump interrogate_acorn
         "Conclude The Investigation":
@@ -59,28 +68,28 @@ label pick_interrogation:
 label scene_2:
 
 label interrogate_fox:
-    scene bg interrogation_room
+    show fox at center
     fox "Let's talk. But make it fast."
     jump pick_interrogation
 
 label interrogate_ariel:
-    scene bg interrogation_room
+    show ariel at center
     ariel "You think I did it? Prove it."
     jump pick_interrogation
 
 label interrogate_gerald:
-    scene bg interrogation_room
+    show gerald at center
     gerald "Ribbit— I mean, no comment."
     jump pick_interrogation
 
 label interrogate_computer:
-    scene bg interrogation_room
+    show computer at center
     computer "Interrogating the system? Bold."
     jump pick_interrogation
 
 label interrogate_carpet:
-    scene bg interrogation_room
     show carpet at center
+
     mc "So... where were you when the alarms went off?"
     carpet "Dreamland, man. Out cold. Didn’t hear a thing until the sirens quit."
     menu:
@@ -107,13 +116,9 @@ label interrogate_carpet:
     mc "That'll be all for now..."
     jump pick_interrogation
 
-label interrogate_nicky:
-    scene bg interrogation_room
-    nicky "Whoa, whoa— chill. What's this about?"
-    jump pick_interrogation
-
 label interrogate_acorn:
-    scene bg interrogation_room
+    show acorn
+
     acorn "You've got THREE minutes.  I've got to get back to the cockpit.  We're running out of oxygen, and someone's got to save us.  Also, the ship doesn't steer itself!"
     mc "Well, funnily enough, it kind of does... but anyway, why're you acting so responsible all of a sudden?"
     acorn "Shush, someone's trying to kill us.  Focus!"
@@ -154,17 +159,15 @@ label accuse_saboteur:
             jump accuse_computer
         "Accuse Carpet":
             jump accuse_carpet
-        "Accuse Nicky":
-            jump accuse_nicky
         "Accuse Acorn":
             jump accuse_acorn
 
 label accuse_fox:
-    fox "You're a dead man."
+    fox "You're a dead tiger."
     jump game_over
 
 label accuse_ariel:
-    ariel "You're a dead woman."
+    ariel "You're a dead bunny."
     jump game_over
 
 label accuse_gerald:
@@ -172,15 +175,11 @@ label accuse_gerald:
     jump game_over
 
 label accuse_computer:
-    computer "You're a dead computer."
+    computer "You're a dead cat."
     jump game_over
 
 label accuse_carpet:
-    carpet "You're a dead carpet."
-    jump game_over
-
-label accuse_nicky:
-    nicky "You're a dead axolotl."
+    carpet "You're a dead axolotl."
     jump game_over
 
 label accuse_acorn:
