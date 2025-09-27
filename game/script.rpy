@@ -60,21 +60,26 @@ label scene_2:
 
 label interrogate_fox:
     scene bg interrogation_room
+    show fox at center
+    scene bg interrogation_room
     fox "Let's talk. But make it fast."
     jump pick_interrogation
 
 label interrogate_ariel:
     scene bg interrogation_room
+    show ariel at center
     ariel "You think I did it? Prove it."
     jump pick_interrogation
 
 label interrogate_gerald:
     scene bg interrogation_room
+    show gerald at center
     gerald "Ribbit— I mean, no comment."
     jump pick_interrogation
 
 label interrogate_computer:
     scene bg interrogation_room
+    show computer at center
     computer "Interrogating the system? Bold."
     jump pick_interrogation
 
@@ -109,11 +114,13 @@ label interrogate_carpet:
 
 label interrogate_nicky:
     scene bg interrogation_room
+    show nicky at center
     nicky "Whoa, whoa— chill. What's this about?"
     jump pick_interrogation
 
 label interrogate_acorn:
     scene bg interrogation_room
+    show acorn at center
     acorn "You've got THREE minutes.  I've got to get back to the cockpit.  We're running out of oxygen, and someone's got to save us.  Also, the ship doesn't steer itself!"
     mc "Well, funnily enough, it kind of does... but anyway, why're you acting so responsible all of a sudden?"
     acorn "Shush, someone's trying to kill us.  Focus!"
